@@ -14,7 +14,7 @@
 //        String from = "";
 //
 //        // Assuming you are sending email from through gmails smtp
-//        String host = "kirank998004@gmail.com";
+//        String host = "your_email";
 //
 //        // Get system properties
 //        Properties properties = System.getProperties();
@@ -30,7 +30,7 @@
 //
 //            protected PasswordAuthentication getPasswordAuthentication() {
 //
-//                return new PasswordAuthentication(from, "ilck sudj euko lebo");
+//                return new PasswordAuthentication(from, "your_email_passwd");
 //
 //            }
 //
@@ -81,7 +81,7 @@ public class sendOTPService {
         String to = email;
 
         // Sender's email ID (your Gmail address) needs to be mentioned
-        String from = "kirank998004@gmail.com";  // Replace with your email
+        String from = "your_email";  // Replace with your email
 
         // Gmail SMTP server
         String host = "smtp.gmail.com";
@@ -98,7 +98,7 @@ public class sendOTPService {
         // Get the Session object and pass the username and app password
         Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(from, "ilck sudj euko lebo");  // Replace with your Gmail App Password
+                return new PasswordAuthentication(from, "your_app_passwd");  // Replace with your Gmail App Password
             }
         });
 
